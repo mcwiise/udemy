@@ -40,12 +40,18 @@ public class Lecture5 {
   @Test
   public void averageCarPrice() throws Exception {
     // calculate average of car prices
-
+    List<Car> cars = MockData.getCars();
+    double averagePrice = cars.stream()
+            .mapToDouble(car -> car.getPrice())
+            .average()
+            .getAsDouble();
+    System.out.println(averagePrice);
+    assertThat(52693.19979).isEqualTo(averagePrice);
   }
 
   @Test
   public void test() throws Exception {
-
+    MockData.getCars().forEach(System.out::println);
   }
 }
 
