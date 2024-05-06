@@ -29,7 +29,12 @@ public class Lecture5 {
   public void ourFirstMapping() throws Exception {
     // transform from one data type to another
     List<Person> people = MockData.getPeople();
-    
+    List<PersonDTO> dtos = people.stream().map(person -> {
+      PersonDTO dto = new PersonDTO(person.getId(), person.getFirstName(), person.getAge());
+      return dto;
+    }).collect(Collectors.toList());
+    dtos.stream().forEach(personDTO -> System.out.println(personDTO));
+    assertThat(dtos.size()).isEqualTo(1000);
   }
 
   @Test
