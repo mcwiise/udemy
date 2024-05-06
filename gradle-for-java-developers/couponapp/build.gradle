@@ -1,0 +1,26 @@
+
+// configuration in allprojects closure will apply to sub modules and the root project.
+allprojects {
+    project.task('printProjectName',{
+        doLast(){
+            println project.name
+        }
+    })
+}
+
+// configuration in subprojects closure will apply to all sub modules but not the root project
+subprojects {
+    apply plugin: 'application'
+
+    version = '1.0'
+    group = 'tales'
+
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation 'junit:junit:4.13'
+    }
+}

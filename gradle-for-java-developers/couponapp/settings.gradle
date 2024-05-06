@@ -1,0 +1,5 @@
+rootProject.name = 'couponapp'
+include('web')
+include('services')
+include('data')
+include('integration')
