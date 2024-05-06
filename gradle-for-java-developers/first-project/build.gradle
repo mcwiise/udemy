@@ -1,0 +1,13 @@
+// Alternative one to create a gradle task
+task firstTask {
+    doLast() {
+        println("First task works!")
+    }
+}
+
+// A verbose alternative to create a gradle task
+project.task('secondTask', {
+    doLast() {
+        println("Secomd task works!")
+    }
+})
