@@ -1,5 +1,9 @@
+// This statement is executed in the configuration phase
+print("Welcome to Gradle")
+
 // Alternative one to create a gradle task
 task firstTask {
+    // instructions in doLast() method are executed in the execution phase
     doLast() {
         println("First task works!")
     }
