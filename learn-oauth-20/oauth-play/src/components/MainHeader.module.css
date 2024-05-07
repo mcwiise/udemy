@@ -1,0 +1,31 @@
+.header {
+  height: 56px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  position: fixed;
+}
+
+.navBar {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.legend {
+  align-self: center;
+  padding-top: 2px;
+  padding-left: 4px;
+}
