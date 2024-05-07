@@ -2,6 +2,7 @@ plugins {
     id 'war'
     id 'org.gretty' version '4.1.3'
     id 'jacoco'
+    id 'org.sonarqube' version '3.0'
 }
 
 repositories {
@@ -12,6 +13,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.mockito:mockito-core:5.11.0'
     compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+}
+
+sonarqube {
+    properties {
+        property "sonar.token", "squ_b84eec9fcd0743275f87ab48e30d2a193ec8cfed"
+    }
 }
 
 test.finalizedBy jacocoTestReport

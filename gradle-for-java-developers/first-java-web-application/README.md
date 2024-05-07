@@ -39,3 +39,19 @@ $ gradle tasks --all
 $ gradle appRun
 
 ```
+
+### The sonarqube plugin
+
+This is a gradle plugin that allows to send code quality results for a sonar qube instance to analize
+
+
+```bash
+# start sonar qube container
+$ docker-compose up -d --build
+
+# execute the sonarqube gradle task to send report to sonar
+$ gradle sonarqube
+
+```
+
+Finally go to localhost:90000 and see the results.
