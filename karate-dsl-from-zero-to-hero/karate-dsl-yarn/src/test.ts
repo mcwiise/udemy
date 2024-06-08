@@ -1,2 +1,2 @@
-import karate from '@karatelabs/karate';
+import karate from "@karatelabs/karate";
 karate.exec();

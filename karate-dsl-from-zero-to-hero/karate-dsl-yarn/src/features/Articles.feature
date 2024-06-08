@@ -1,7 +1,7 @@
 Feature: Articles
 
 Background: Define URL
-  Given url 'https://conduit-api.bondaracademy.com/api'
+  Given url baseApiUrl
   * def tokenResponse = call read('../helpers/CreateToken.feature')
   * def authzToken = tokenResponse.authzToken
 

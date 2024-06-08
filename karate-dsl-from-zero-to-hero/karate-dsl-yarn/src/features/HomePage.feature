@@ -1,7 +1,7 @@
 Feature: Tests for the home page
 
 Background: Define URL
-  Given url 'https://conduit-api.bondaracademy.com/api'
+  Given url baseApiUrl
 
 Scenario: Get all tags
   Given path 'tags'
