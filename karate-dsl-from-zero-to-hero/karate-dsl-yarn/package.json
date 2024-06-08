@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "test": "node ./dist/test.js",
-    "test:all": "node ./dist/test.js ./"
+    "test:dev": "node ./dist/test.js --env=dev ./ "
   },
   "devDependencies": {
     "@karatelabs/karate": "^0.2.2",
