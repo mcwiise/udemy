@@ -1,0 +1,13 @@
+{
+  "name": "karate-dsl-yarn",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "node ./dist/test.js"
+  },
+  "devDependencies": {
+    "@karatelabs/karate": "^0.2.2",
+    "typescript": "^5.4.5"
+  }
+}
