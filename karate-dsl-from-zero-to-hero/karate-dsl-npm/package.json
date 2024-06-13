@@ -1,0 +1,14 @@
+{
+  "name": "karate-dsl-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node karate-runner.js --env=dev ./ "
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@karatelabs/karate": "^0.2.2"
+  }
+}

@@ -16,4 +16,3 @@ Feature: Articles
     When method Post
     Then status 201
     And match response.article.title == 'bla bla'
-
