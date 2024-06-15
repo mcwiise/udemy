@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node karate-runner.js --env=dev ./ "
+    "test": "node karate-runner.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@karatelabs/karate": "^0.2.2"
+    "@karatelabs/karate": "^0.3.1",
+    "commander": "^12.1.0"
   }
 }
